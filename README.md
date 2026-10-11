@@ -3,19 +3,19 @@
 ```mermaid
 classDiagram
     class Main {
-        +main(args)
+        +main(args) void
     }
     class Message {
         -String sender
         -String content
-        +getSender()
-        +getContent()
+        +getSender() String
+        +getContent() String
     }
     class MessagingService {
-        -List list
-        +add(message)
-        +getMessages()
+        -List~Message~ messages
+        +add(message: Message) void
+        +getMessages() List~Message~
     }
 
     Main --> MessagingService : uses
-    MessagingService o-- Message : stores
+    MessagingService "1" o-- "0..*" Message : stores
