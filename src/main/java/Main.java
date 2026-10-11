@@ -4,7 +4,7 @@ public class Main {
         MessagingService service = new MessagingService();
 
         Message msg1 = new Message("Alice", "Hi Bob, do you want to play tennis?");
-        Message msg2 = new Message("Bob", "Yes, let's meet at the tennis court on Saturday morning.");
+        Message msg2 = new Message("Bob", "Yes, let's meet at the tennis court on Monday morning.");
         Message msg3 = new Message("Alice", "Ok, see you");
 
         service.add(msg1);
