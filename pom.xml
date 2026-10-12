@@ -21,10 +21,10 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.3.1</version>
                 <configuration>
-                    <!-- Przełączenie na standard Google -->
+
                     <configLocation>google_checks.xml</configLocation>
                     <consoleOutput>true</consoleOutput>
-                    <!-- Zmiana na false sprawia, że dostajesz tylko warningi -->
+
                     <failsOnError>false</failsOnError>
                     <linkXRef>false</linkXRef>
                 </configuration>
