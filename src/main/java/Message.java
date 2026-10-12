@@ -41,4 +41,9 @@ public class Message {
         }
         return Objects.equals(this.content, other.content);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(sender, content);
+    }
 }

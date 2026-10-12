@@ -3,7 +3,7 @@ import java.util.List;
 
 public class MessagingService {
 
-    private List<Message> list;
+    final private List<Message> list;
 
     public MessagingService() {
         this.list = new ArrayList<>();
